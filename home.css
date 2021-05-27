@@ -1,0 +1,146 @@
+/*Banner CSS */
+.banner {
+  border: 5px outset #800080;
+  background-color: #0000A0;
+  color: white;
+  text-align: center;
+}
+
+/*The following is the css code for my animation background. it uses 3 different colours, rotates them on an angle and allows them to slide over one another creating the animation effect*/
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #0000A0 50%, 	#800080 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*The following code shows how the colours are visible over one another*/
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/*Overall Web Page CSS*/
+#app {
+    max-width: 1000px;
+    text-align: center;
+}
+/*Heading 1 CSS*/
+h1 {
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+/*Heading 2 CSS*/
+h2{
+  color: white;
+  text-align: center;
+}
+/*Text CSS*/
+p{
+  color:white;
+  font-size:20px;
+  text-align: center;
+}
+
+/*Pound for Pound Button CSS. With this button, I also provided a transition to it so there would be an animation when the courser hovers over the button*/
+.btnp4p {
+  background-color: #0000A0;
+  border: 4px solid #ADD8E6;
+  border-radius: 16px;
+  color: white;
+  padding: 18px 64px;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 400px;
+  transition: 0.7s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*Button CSS when hovering over with the mouse*/
+.btnp4p:hover {
+  background-color: black;
+  border: 4px solid #fffaf0;
+  color: white;
+}
+
+/*Contact Us Button CSS. With this button, I also provided a transition to it so there would be an animation when the courser hovers over the button*/
+.btnContact{
+  background-color: orange;
+  border: 4px solid yellow;
+  border-radius: 16px;
+  color: white;
+  padding: 18px 64px;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 400px;
+  transition: 0.7s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Button CSS when hovering over with the mouse*/
+.btnContact:hover {
+  background-color: black;
+  border: 4px solid #fffaf0;
+  color: white;
+}
+
+/*Button CSS*/
+.btnLogout {
+  background-color: red;
+  border: 4px solid #black;
+  border-radius: 16px;
+  color: white;
+  padding: 18px 64px;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 400px;
+  transition: 0.7s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Button CSS when hovering over with the mouse*/
+.btnLogout:hover {
+  background-color: black;
+  border: 4px solid #fffaf0;
+  color: white;
+}
